@@ -1,0 +1,78 @@
+:root {
+  --font-Roboto: 'Roboto', sans-serif;
+  --font-Open-Sans: 'Open Sans', sans-serif;
+  --font-Agbalumo: 'Agbalumo', sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+.App {
+  /* border: 2px black solid; */
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-div {
+  display: flex;
+  /* flex-direction: column; */
+  gap: .5rem;
+}
+
+.btn {
+  width: 5rem;
+  padding: 1rem;
+  border: none;
+  /* border: none solid black; */
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  cursor: pointer;
+  font-family: var(--font-Roboto);
+}
+
+.gif {
+  object-fit: cover;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.yes {
+  background-color: pink;
+}
+
+.no {
+  background-color: rgb(230, 62, 62);
+}
+
+.phrase {
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--font-Agbalumo);;
+  color: pink;
+  font-weight: bolder;
+}
+
+.gif-div {
+  margin: 2rem 0;
+  width: 15rem;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+@media screen and (orientation: landscape) {
+  .phrase {
+    margin-top: 6rem;
+  }
+
+  .gif-div {
+    margin: 0.5rem 0;
+  }
+}
